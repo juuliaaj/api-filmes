@@ -17,7 +17,7 @@ function Home() {
 
     return (
         <Container>
-            <h1>Movies</h1>
+            <h1>Filmes Populares</h1>
             <MovieList>
                 {movies.map((movie) => {
                     return (

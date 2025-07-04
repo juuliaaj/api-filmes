@@ -6,6 +6,7 @@ export const Container = styled.div`
     h1 {
         text-align: center;
         margin: 4rem 0;
+        color:rgb(133, 45, 45);
     }
 `;
 
@@ -24,7 +25,7 @@ export const Movie = styled.li`
     justify-content: space-evenly;
     img {
         width: 180px;
-        border-radius: 1rem;
+        border-radius: 5px;
         margin-bottom: 2rem;
     }
     span {
@@ -41,12 +42,12 @@ export const Movie = styled.li`
 `;
 
 export const Btn = styled.button`
-    margin-top: 5px;
+    margin-top: 8px;
     padding: 0.7rem 3rem;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #212121;
-    background-color: #ffffff;
+    background-color:rgb(236, 143, 143);
     font-weight: 1000;
     font-size: 12 px;
     cursor: pointer;
