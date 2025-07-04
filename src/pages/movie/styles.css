@@ -26,8 +26,15 @@ nav h1 {
   padding: 1rem;
 }
 
+.buttons-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
 .link_button {
-  margin-top: 15px;
   padding: 0.7rem 2.5rem;
   border: none;
   border-radius: 12px;
@@ -37,11 +44,31 @@ nav h1 {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .link_button:hover {
   background-color: #ff66b2;
   transform: scale(1.05);
+}
+
+.trailer_button {
+  padding: 0.7rem 2.5rem;
+  border: none;
+  border-radius: 12px;
+  color: #f2f2f2;
+  background: linear-gradient(135deg, #ff6b35, #e60073);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(230, 0, 115, 0.3);
+}
+
+.trailer_button:hover {
+  background: linear-gradient(135deg, #ff8c5a, #ff66b2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(230, 0, 115, 0.5);
 }
 
 .img_movie {
