@@ -2,54 +2,89 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     padding: 2rem;
+    background-color: #0a0a0a;
+    min-height: 100vh;
 
     h1 {
         text-align: center;
-        margin: 4rem 0;
-        color:rgb(133, 45, 45);
+        margin: 2rem 0;
+        color: #ff007f;
+        font-size: 2.2rem;
+        font-weight: 800;
     }
 `;
 
 export const MovieList = styled.ul`
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: 3rem;
-    row-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    padding: 0;
 `;
 
 export const Movie = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.05));
+    border-radius: 14px;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+        background: linear-gradient(145deg, rgba(255, 0, 128, 0.05), rgba(255, 255, 255, 0.02));
+    }
+
     img {
-        width: 180px;
-        border-radius: 5px;
-        margin-bottom: 2rem;
+        width: 160px;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+        box-shadow: 0 4px 15px rgba(255, 0, 128, 0.25);
+        transition: transform 0.3s;
     }
+
+    img:hover {
+        transform: scale(1.03);
+    }
+
     span {
-        font-weight: bold;
-        font-size: 120%;
+        font-weight: 700;
+        font-size: 1rem;
         text-align: center;
+        color: #f2f2f2;
+        margin-top: 0.3rem;
+        min-height: 2.5rem;
     }
+
     a {
-        transition: all 0.3s;
-    }
-    a:hover {
-        transform: scale(1.1);
+        text-decoration: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
     }
 `;
 
 export const Btn = styled.button`
-    margin-top: 8px;
-    padding: 0.7rem 3rem;
+    margin-top: 0.5rem;
+    padding: 0.6rem 2rem;
     border: none;
     border-radius: 10px;
-    color: #212121;
-    background-color:rgb(236, 143, 143);
-    font-weight: 1000;
-    font-size: 12 px;
+    color: #fff;
+    background: linear-gradient(135deg, #ff007f, #e60073);
+    font-weight: 700;
+    font-size: 0.95rem;
     cursor: pointer;
-    transition: all 250ms;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        background: linear-gradient(135deg, #ff3399, #ff66b2);
+        transform: scale(1.06);
+        box-shadow: 0 0 12px rgba(255, 0, 128, 0.4);
+    }
 `;
+
+
