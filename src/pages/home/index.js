@@ -59,7 +59,7 @@ function Home() {
         borderRadius: "10px",
         border: "none",
         backgroundColor: "#1a1a1a",
-        color: "#f2f2f2",
+        color: "#808080",
         marginBottom: "30px",
         fontSize: "1rem",
         outline: "none",
